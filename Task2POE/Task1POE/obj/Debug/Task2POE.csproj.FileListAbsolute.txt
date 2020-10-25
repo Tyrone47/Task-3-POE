@@ -1,0 +1,6 @@
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task2POE.csprojAssemblyReference.cache
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task1POE.Properties.Resources.resources
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task2POE.csproj.GenerateResource.cache
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task2POE.csproj.CoreCompileInputs.cache
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task1POE.exe
+C:\Users\Tyrone\OneDrive\Documents\VEGA School (Semester 2)\Game Development 2A\POE\Task 2\Task1POE\Task1POE\obj\Debug\Task1POE.pdb
