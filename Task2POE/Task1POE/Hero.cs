@@ -47,7 +47,14 @@ namespace Task1POE
                 return moves
             
             }
-
+             
+        public override string ToString()
+        {
+        
+            string heroStats = " HP: "  + HP + "\n Damage: " + Damage + " (" + X + Y + ")" ;
+            return heroStats;
+        
+        }
 
         }
 
