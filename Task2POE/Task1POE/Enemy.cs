@@ -7,32 +7,28 @@ using System.Xml.Serialization;
 
 namespace Task1POE
 {
-    internal abstract class Enemy : Character
+     abstract class Enemy : Character
     {
 
         protected Random enemy = new Random();
         
-        Enemy(int XParameter, int YParameter)
-        {
-            int randomNumber = enemy.Next();
-            XParameter = X;
-            YParameter = Y;
-
-            string EnemyClassName = $"[X,Y]  ";
-                 
+        Enemy(int XParameter, int YParameter ,int HP, int maxHP , int Damage): base (XParameter,YParameter)
         {
             
+                 
         }
-    } 
-        ReturnMethod()
+
+        public override string ToString()
         {
-
+        
+            string enemyStats = this.GetType().Name + " (" + X + Y + ")";
+            return enemyStats;
+        
         }
 
 
 
 
-       
-        
+
     }
 }

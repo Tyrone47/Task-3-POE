@@ -22,12 +22,11 @@ namespace Task1POE
             get { return X; }
             set { X = value; }
         }
+
         public Tile(int X , int Y)//A constructor for the following values
             {
             this.X = X;
             this.Y = Y;
-        
-     
         
         }
 

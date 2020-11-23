@@ -8,12 +8,46 @@ namespace Task1POE
 {
     class Hero : Character 
     {
-
-
-        public override ReturnMove()
+        public Hero(int X , int Y, int HP): base (int X , int Y)
         {
+        
 
+        
+        }
+
+        public override Movement ReturnMove(Movement moves)
+        {
+            if (movement == Movement.Up)
+            {
             
+                return moves
+            
+            }
+            else if (movement == Movement.Down)
+            {
+            
+                return moves
+            
+            }
+            else if (movement == Movement.Left)
+            {
+            
+                return moves
+            
+            }
+            else if (movement == Movement.Right)
+            {
+            
+                return moves
+            
+            }
+            else (movement == Movement.NoMovement)
+            {
+            
+                return moves
+            
+            }
+
 
         }
 

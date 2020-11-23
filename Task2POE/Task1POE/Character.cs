@@ -31,7 +31,7 @@ namespace Task1POE
 
         {
             // maxHP = HP - Damage;
-            target.HP -= Damage;
+            target = HP - Damage;
             
         }
         public bool IsDead (int maxHP)
@@ -58,18 +58,37 @@ namespace Task1POE
         {
              target.Distanceto;
         }
-        public void Move(Movement )
+        public void Move(Movement moving)
+        {
+            if (moving == Movement.Up)
+            {
+            Y= Y + 1 ;
+            }
+            else if(moving == Movement.Down)
+            {
+                Y = Y - 1;
+            }
+            else if (moving == Movement.Left)
+            {
+            X = X - 1;
+            }
+            else if (moving == Movement.Right)
+            {
+            X = X + 1;
+            }
+            else 
+            {
+               X = X;
+               Y = Y;
+            }
+        }
+
+        public abstract Movement ReturnMove (Movement move = 0)
         {
 
         }
+        public abstract override ToString();
 
-        public abstract Movement(Movement)
-        {
-
-        }
-        public abstract override ToString()
-        {
-
-        }
+        
     }
 }
