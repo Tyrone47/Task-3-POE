@@ -19,32 +19,32 @@ namespace Task1POE
         {
             if (movement == Movement.Up)
             {
-            
-                return moves
+
+                return moves;
             
             }
             else if (movement == Movement.Down)
             {
-            
-                return moves
+
+                return moves;
             
             }
             else if (movement == Movement.Left)
             {
-            
-                return moves
+
+                return moves;
             
             }
             else if (movement == Movement.Right)
             {
-            
-                return moves
+
+                return moves;
             
             }
             else (movement == Movement.NoMovement)
             {
-            
-                return moves
+
+                return moves;
             
             }
              

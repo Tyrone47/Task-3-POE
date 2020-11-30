@@ -57,6 +57,7 @@ namespace Task1POE
                     }
 
                 }
+
                int x = 0
                      Random enemyAppear = new Random();
                while(x < enemies)

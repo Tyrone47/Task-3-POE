@@ -11,7 +11,7 @@ namespace Task1POE
 
         private int gold { get; set; }
         private Random GoldDrops = new Random () ;
-        Gold(int X, int Y)
+       public Gold(int X, int Y)
         {
             this.X = x;
             this.Y = y;

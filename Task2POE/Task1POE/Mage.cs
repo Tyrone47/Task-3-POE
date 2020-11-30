@@ -8,7 +8,7 @@ namespace Task1POE
 {
     class Mage : Enemy
     {
-        Mage (int HP,int Damage)
+        public Mage (int HP,int Damage)
         {
             this.X = HP;
             this.Y = Damage ;
