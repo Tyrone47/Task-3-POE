@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task3POE
-{
+{/*
     class MeleeWeapon : Weapon
     {
         public enum Types
@@ -38,5 +38,5 @@ namespace Task3POE
 
         }
 
-    }
+    }*/
 }

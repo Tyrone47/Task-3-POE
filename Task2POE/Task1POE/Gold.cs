@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task1POE
-{
+{/*
     class Gold : Item
     {
 
@@ -19,5 +19,5 @@ namespace Task1POE
             int y = GoldDrops.Next(1, 5);
 
         }
-    }
+    }*/
 }

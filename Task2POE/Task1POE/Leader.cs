@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task3POE
 {
-    class Leader : Enemy
+   /* class Leader : Enemy
     {
         private Tile {get;set;}
     public Leader (int X, int Y, int HP = 10, int maxHP = 10, int Damage = 1) : base(int X, int Y)
@@ -17,5 +17,5 @@ namespace Task3POE
     }
 
 
-}
+}*/
 }

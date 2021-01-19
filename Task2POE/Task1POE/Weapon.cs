@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task3POE
-{
+{/*
     abstract class Weapon : Item
     {
          protected int Damage;
@@ -21,5 +21,5 @@ namespace Task3POE
             }
 
 
-    }
+    }*/
 }

@@ -16,27 +16,25 @@ namespace Task1POE
         {
             NoMovement,Up,Down,Left,Right
         }
-        protected char[] CharacterTypes = { 'H', 'E' };
+        //protected char[] CharacterTypes = { 'H', 'E' };
 
-
-        private TileType tileType;
-        public Character(int x , int y) : base (x,y)
-           /* A constructor that receives X and Y positions and a symbol and delegates
-             the setting of those variables to the Tile class via a constructor initializer.*/
+        
+        
+        public Character(int x , int y ,  TileType symbol ) : base (x,y,symbol)
+           // A constructor that receives X and Y positions and a symbol and delegates
+            // the setting of those variables to the Tile class via a constructor initializer.
         {
-           
+            Tiles = new Tile[4];
         }
 
         public virtual void Attack (Character target)
 
         {
-            // maxHP = HP - Damage;
-            target = HP - Damage;
-            
+            target.HP = target.HP - Damage; 
         }
-        public bool IsDead (int maxHP)
+        public bool IsDead ()
         {
-            if (maxHP <= 0)
+            if (HP <= 0)
             {
                 return true;
             
@@ -47,26 +45,34 @@ namespace Task1POE
             }
         }
 
-        private int Distanceto(Character target)//Determines distance between 
+        private int DistanceTo(Character target)//Determines distance between 
         {
-            int XDifference = X - target.X;
-            int YDifference = Y - target.Y;
-            return ;
-
+            int XDifference = Math.Abs( X - target.X);
+            int YDifference = Math.Abs ( Y - target.Y);
+             return XDifference + YDifference;       
         }
         public virtual bool CheckRange(Character target)
         {
-             target.Distanceto;
-        }
+             
+            if(DistanceTo(target) == 1 )
+            {
+                
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        } 
         public void Move(Movement moving)
         {
             if (moving == Movement.Up)
             {
-            Y= Y + 1 ;
+            Y= Y -1 ;
             }
             else if(moving == Movement.Down)
             {
-                Y = Y - 1;
+                Y = Y + 1;
             }
             else if (moving == Movement.Left)
             {
@@ -76,18 +82,12 @@ namespace Task1POE
             {
             X = X + 1;
             }
-            else 
-            {
-               X = X;
-               Y = Y;
-            }
+            
         }
 
-        public abstract Movement ReturnMove (Movement move = 0)
-        {
-
-        }
-        public abstract override ToString();
+        public abstract Movement ReturnMove(Movement move = 0);
+        
+        public abstract override string ToString( );
 
         
     }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task1POE
-{
+{/*
     abstract class Item : Tile
     {
         //  Item Xparameter = new Item();
@@ -18,6 +18,6 @@ namespace Task1POE
         public override abstract string ToString();
        
     }
-   
+   */
 
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Task1POE
-{
+{/*
     class Hero : Character 
     {
         public Hero(int X , int Y, int HP): base (int X , int Y)
@@ -55,8 +55,8 @@ namespace Task1POE
             return heroStats;
         
         }
-
+        
         }
 
-    }
+    }*/
 }

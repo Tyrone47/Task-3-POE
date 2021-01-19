@@ -10,12 +10,16 @@ namespace Task1POE
     {
         protected int X;
         protected int Y;
+
         public enum TileType
         {
             Hero,
             Enemy,
+            Goblin,
             Gold,
-            Weapon
+            Weapon,
+            Obstacle,
+            Empty
         }
         public int x //X Constructor
         {
@@ -23,8 +27,9 @@ namespace Task1POE
             set { X = value; }
         }
 
-        public Tile(int X , int Y)//A constructor for the following values
-            {
+        public Tile(int X , int Y , TileType T)//A constructor for the following values
+        {
+            this.tileType = T;
             this.X = X;
             this.Y = Y;
         
@@ -49,13 +54,6 @@ namespace Task1POE
         {
             tileType = value;
         }
-        
-        //public Tile (char XPosition , char YPosition , enum TypeOfTile)
-         
-            
-
-            
-
 
         
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task1POE
 {
-    class Mage : Enemy
+    /*class Mage : Enemy
     {
         public Mage (int HP,int Damage)
         {
@@ -23,5 +23,5 @@ namespace Task1POE
         ReturnMethod mageReturn = new ReturnMethod;
         
         CheckRange mageRange = new CheckRange;
-    }
+    }*/
 }

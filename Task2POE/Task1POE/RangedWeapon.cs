@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task3POE
 {
-    class RangedWeapon : Weapon
+   /* class RangedWeapon : Weapon
     {
         public enum Types
         {
@@ -31,5 +31,5 @@ namespace Task3POE
                 Damage = 4;
                 Cost = 6;
             }
-        }
+        }*/
 }

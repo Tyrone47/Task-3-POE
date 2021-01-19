@@ -12,10 +12,14 @@ namespace Task1POE
 
         protected Random enemy = new Random();
         
-        Enemy(int XParameter, int YParameter ,int HP, int maxHP , int Damage): base (XParameter,YParameter)
+        public Enemy(int XParameter, int YParameter , int maxHP , int Damage , TileType symbol ): base (XParameter,YParameter, symbol )
         {
             
                  
+        }
+
+        protected Enemy(int xPosition, int yPosition, TileType symbol)
+        {
         }
 
         public override string ToString()

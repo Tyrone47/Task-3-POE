@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Task1POE
 {
-
+/*
     private string[] Enemy = { "Goblin ","Mage" };
      
     class Map
@@ -74,5 +74,5 @@ namespace Task1POE
         
         
          
-    }
+    }*/
 }

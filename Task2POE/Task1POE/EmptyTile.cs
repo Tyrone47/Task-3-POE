@@ -8,12 +8,9 @@ namespace Task1POE
 {
     class EmptyTile : Tile
     {
-        public EmptyTile (char XParameter, char YParameter)
+        public EmptyTile (char XParameter, char YParameter) : base(XParameter, YParameter, TileType.Empty)
         {
-            x = XParameter;
-            y = YParameter;
-
-
+           
         }
     }
 }
