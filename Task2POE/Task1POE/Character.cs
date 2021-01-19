@@ -20,7 +20,7 @@ namespace Task1POE
 
         
         
-        public Character(int x , int y ,  TileType symbol ) : base (x,y,symbol)
+        public Character(int x , int y  ) : base (x,y)
            // A constructor that receives X and Y positions and a symbol and delegates
             // the setting of those variables to the Tile class via a constructor initializer.
         {

@@ -27,9 +27,9 @@ namespace Task1POE
             set { X = value; }
         }
 
-        public Tile(int X , int Y , TileType T)//A constructor for the following values
+        public Tile(int X , int Y )//A constructor for the following values
         {
-            this.tileType = T;
+            
             this.X = X;
             this.Y = Y;
         

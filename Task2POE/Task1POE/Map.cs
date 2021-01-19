@@ -7,72 +7,88 @@ using System.Threading.Tasks;
 
 namespace Task1POE
 {
-/*
-    private string[] Enemy = { "Goblin ","Mage" };
+
+    
      
-    class Map
+  class Map
     {
-        private int width = 7;
-        private int height = 7;
+        private int width = 15;
+        private int height = 15;
+        private int gold;
+
         public  string[,] TileArray;
-            
-        public Map(int minWidth, int maxWidth , int minHeight , int maxHeight, int enemies )
+        private Random cost = new Random();
+
+        public Map(int minWidth, int maxWidth , int minHeight , int maxHeight, int enemies, int treas )
         {
         
-            Random cost = new Random(); 
-            int width = cost.Next(minWidth , maxWidth);
-            int height = cost.Next(minHeight , maxHeight);
-            TileArray = new string [width ,  height];
+            
+            
+            width = height;
+            TileArray = new string [height ,width];
+            treas = gold;
             Create (enemies);
 
         
         }     
 
-        Hero(Character )
-        { 
         
-        }
-        string[] Goblin = new Enemy[2,1];
-        private Create(int enemies)
+        
+        private void Create(int enemies)
         {
             string hero = " H ";
-            string walls = " X ";
+            string walls = "X";
             string spaces = ".";
             string goblin = "G";
             
-            for(int i=0 ; i < width ; i++)
+            for(int row =0 ; row < height; row++)
             {
-                for (int j = 0; i < width ; i++)
+                for (int colown = 0; colown < width ; colown++)
                 {
                 
-                    if (i == 0 && i == width - 1 || j == 0 && j == height - 1)
+                    if (row == 0 || row == width - 1 || colown == 0 || colown == height - 1)
                     {
-                       TileArray[i,j]= walls;
+                       TileArray[row,colown]= walls;
                      
                     
                     }
                     else 
                     {
-                        TileArray[i,j]= spaces;
+                        TileArray[row,colown]= spaces;
                     }
 
                 }
 
-               int x = 0
-                     Random enemyAppear = new Random();
-               while(x < enemies)
-               {
-               int enemyHeight = Random.Next(0,height);
-                int enemyWidth = Random.Next(0,width);
-                    TileArray[enemyHeight,enemyWidth]= Goblin;
-                    x++;
-               }
             }
+
+            int x = 0;
+            Random enemyAppear = new Random();
+            int enemyHeight;
+            int enemyWidth;
+            string goblinenemy = "G";
+
+            while (x < enemies)
+            {
+                enemyHeight = enemyAppear.Next(1, height - 1);
+                enemyWidth = enemyAppear.Next(1, width - 1);
+                TileArray[enemyHeight, enemyWidth] = goblin;
+                x++;
+            }
+            string gold = "T";
+            int y = 0;
+            while (y < enemies)
+            {
+                enemyHeight = enemyAppear.Next(1, height - 1);
+                enemyWidth = enemyAppear.Next(1, width - 1);
+                TileArray[enemyHeight, enemyWidth] = gold;
+                y++;
+            }
+
 
         }
             
         
         
          
-    }*/
+    }
 }
