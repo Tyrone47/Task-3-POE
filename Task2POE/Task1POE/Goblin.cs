@@ -10,7 +10,7 @@ namespace Task1POE
      class Goblin : Enemy
     {
 
-        public Goblin(int XPosition, int YPosition, int HP, int Damage) : base(XPosition, YPosition,TileType.Goblin)
+        public Goblin(int XPosition, int YPosition, int HP, int Damage) : base(XPosition, YPosition,HP, Damage)
         {
             this.HP = 10;
             this.Damage = 1;
@@ -48,7 +48,7 @@ namespace Task1POE
             {
                  randomRoll = move.Next(0,4);
             }
-            
+
             if (randomRoll == 0)//0 means up,1 means down, 2 means left, right means 3
             {
                 return Movement.Up;
@@ -61,7 +61,7 @@ namespace Task1POE
             {
                 return Movement.Left;
             }
-            else (randomRoll == 3) //0 means up,1 means down, 2 means left, right means 3
+            else 
             {
                 return Movement.Right;
             }
